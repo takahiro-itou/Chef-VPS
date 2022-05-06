@@ -1,0 +1,3 @@
+[submodule "submodules/knifezero"]
+	path = submodules/knifezero
+	url = git@gitlab.com:takahiro-itou/bundle-knifezero.git
