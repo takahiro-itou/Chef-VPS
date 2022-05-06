@@ -16,7 +16,8 @@ fi
 
 set  -x
 pushd ${chef_dir}
-knife  node  \
+bundle  exec        \
+knife  node         \
     -c conf.rb      \
     run_list        \
     add  server1    \

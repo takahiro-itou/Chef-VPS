@@ -23,6 +23,7 @@ if [[ $# -ge 1 ]] ; then
 fi
 
 pushd  ${chef_dir}
+bundle  exec                \
 knife  zero  bootstrap      \
     -x ${ssh_user_name}     \
     -i ${ssh_private_key}   \

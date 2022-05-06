@@ -22,7 +22,9 @@ if [[ $# -ge 1 ]] ; then
 fi
 
 pushd  ${chef_dir}
-knife zero -c conf.rb               \
+bundle  exec                        \
+    knife  zero                     \
+    -c conf.rb                      \
     converge  'name:server1'        \
     -a knife_zero.host              \
     -x ${ssh_user_name}             \
